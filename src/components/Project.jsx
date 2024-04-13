@@ -1,10 +1,12 @@
-//A single Project component that will be used multiple times in the Portfolio section
-//For each project you feature in your portfolio, you should include the following:
+import React from "react";
+import { Link } from "react-router-dom";
 
-//An image of the deployed application (either a GIF or a screenshot)
-
-//The title of the project
-
-//A link to the deployed application
-
-//A link to the corresponding GitHub repository
+export default function Project({ data }) {
+  return (
+    <div style={{border: 'black 2px solid'}}>
+      <h3>{data.name}</h3>
+      <Link to={data.deployed}>deployed</Link>
+      <Link to={data.repo}>repo</Link>
+    </div>
+  );
+}
