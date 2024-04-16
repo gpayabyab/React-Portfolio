@@ -1,6 +1,15 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A portfolio using React to showcase my projects to prospective employers and to collaborate with fellow developers on exciting future projects
+
+
+# Notes
+
+Received support from the tutor with how to get started with my components files 
+Received suport from teacher during office hours with some CSS styling 
+
+
+How to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
