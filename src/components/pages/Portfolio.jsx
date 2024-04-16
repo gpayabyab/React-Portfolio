@@ -4,20 +4,30 @@ import Project from "../Project";
 export default function Portfolio() {
   const data = [
     {
-        name: "project one",
-        deployed: 'https://www.yahoo.com',
-        repo: ''
-    }, 
-    {
-        name: "project two",
-        deployed: 'https://www.google.com',
-        repo: ''
-    }, 
-    {
-        name: "project three",
-        deployed: 'https://www.x.com',
-        repo:''
-    },
+      name: "Password Generator",
+      deployed: '',
+      repo: ''
+  }, 
+  {
+      name: "Work Scheduler",
+      deployed: '',
+      repo: ''
+  }, 
+  {
+      name: "Brewery Search",
+      deployed: '',
+      repo:''
+  },
+  {
+    name: "Plant Shelf",
+    deployed: '',
+    repo:''
+  },
+  {
+    name: "Text Editor",
+    deployed: '',
+    repo:''
+  },
 ];
   return (
     <div>

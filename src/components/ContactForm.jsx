@@ -5,7 +5,7 @@ export default function ContactForm() {
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
   const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -20,7 +20,7 @@ export default function ContactForm() {
     } else if (inputType === 'userName') {
       setUserName(inputValue);
     } else {
-      setPassword(inputValue);
+      setMessage(inputValue);
     }
   };
 
@@ -28,24 +28,24 @@ export default function ContactForm() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-  console.log(userName, email, password);
+  console.log(userName, email, message);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
-    setPassword('');
+    setMessage('');
     setEmail('');
   };
 
   return (
     <div className="container text-center">
-      <h1>Contact me</h1>
+      <h1>Contact Me</h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
           required
         />
         <input
@@ -53,15 +53,15 @@ export default function ContactForm() {
           name="userName"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
+          placeholder="Name"
           required
         />
         <input
-          value={password}
-          name="password"
+          value={message}
+          name="message"
           onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
+          type="message"
+          placeholder="Message"
           required
         />
         <button type="submit">Submit</button>

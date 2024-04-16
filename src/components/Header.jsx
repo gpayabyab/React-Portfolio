@@ -4,7 +4,7 @@ import Navigation from './Navigation'
 export default function Header() {
   return (
     <div>
-      <h1>this is the header</h1>
+      <h1>Gabrielle Payabyab</h1>
       <Navigation />
     </div>
   )
